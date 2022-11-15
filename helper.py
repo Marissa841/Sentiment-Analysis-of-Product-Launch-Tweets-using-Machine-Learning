@@ -1,6 +1,6 @@
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
-from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer()
+from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 
 
 def model_helper(X, y, model, bow=True):
@@ -31,12 +31,13 @@ def model_helper(X, y, model, bow=True):
 
     return model
 
-def word_counts_by_class(word):
+def word_count_by_class(word, df):
     """
     Function to count words in positive and negative tweets. 
 
     Args:
         word (string): word to count from tweet.
+        df (dataframe): dataframe with target and tweets.
     """
     try:
         positive = df[df['target'] == 1]['tweets_without_stopwords'].str.split(expand=True).stack().value_counts()[word]
@@ -48,3 +49,18 @@ def word_counts_by_class(word):
         negative = 0
     print(f"postive count: {positive}")
     print(f"negative count: {negative}")
+
+def tweet_finder_by_word(word, df):
+    """
+    Function to find tweets with specific key word.
+
+    Args: 
+        word (string): word to find in tweet. 
+        df (dataframe): dataframe with target and tweets. 
+    """
+    for index, row in df.iterrows():
+        if word in row["tweets_without_stopwords"]:
+            if row["target"] == 0:
+                print(f"negative - {row['tweet_text']}")
+            else:
+                print(f"positive - {row['tweet_text']}")

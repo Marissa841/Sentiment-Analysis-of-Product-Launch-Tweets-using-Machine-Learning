@@ -5,7 +5,7 @@ This project determines which tweets can be correctly identified to contain  eit
 <br />
 <br />
 
-![positive and negative tweets](img/pos_neg_tweets.png)
+![positive and negative tweets](https://raw.githubusercontent.com/Marissa841/phase_4_project/main/img/pos_neg_tweets.PNG)
 
 
 
@@ -28,7 +28,7 @@ From the above-mentioned methods, I was able to obtain an overall f1 score of 0.
 
 # For more information:
 
-​​See the full analysis in the [Jupyter Notebook](hhttps://github.com/Marissa841/phase_4_project) or review this [presentation](https://github.com/Marissa841/phase_3_project/blob/main/phase_4_project_nontechnical.pdf). For additional info, contact Marissa Bush at Marissabush.02@gmail.com
+​​See the full analysis in the [Jupyter Notebook](https://github.com/Marissa841/phase_4_project/blob/main/nlp_project.ipynb) or review this [presentation](https://github.com/Marissa841/phase_3_project/blob/main/phase_4_project_nontechnical.pdf). For additional info, contact Marissa Bush at Marissabush.02@gmail.com
 
 
 

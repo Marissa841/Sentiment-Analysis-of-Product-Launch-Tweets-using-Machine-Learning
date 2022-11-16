@@ -36,7 +36,7 @@ From the above-mentioned methods, I was able to obtain an overall f1 score of 0.
 
 + data
 + img
-+ main_notebook.ipynb
++ nlp_project.ipynb
 + README.md
 + phase_4_project_nontechnical.pdf
 + helper.py

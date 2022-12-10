@@ -1,22 +1,14 @@
-# Overview: 
+# Business Case
 
-This project determines which tweets can be correctly identified to contain  either positive sentiments (“Positive emotion”) or negative sentiments (“Negative emotion”) using a binary classifier. 
-
-<br />
-<br />
+Apple is hosting a tech conference and they have asked for a  machine learning model to determine whether tweets have a positive or negative sentiment when introducing a new product.
 
 ![positive and negative tweets](https://raw.githubusercontent.com/Marissa841/phase_4_project/main/img/pos_neg_tweets.PNG)
 
-
-
-# Business Case: 
-
-Find the best model to accurately predict whether a tweet is positive or negative.  
-
 # Data:
 
-The data used in this project is from CrowdFlower and data.world. The dataset contains 3 columns with 9,093 rows. The dataset can be found [here](https://data.world/crowdflower/brands-and-product-emotions).
+The data used in this project is from CrowdFlower and data.world. The dataset contains 3 columns with 9,093 rows. The dataset can be found [here](https://data.world/crowdflower/brands-and-product-emotions). Below is a snippet of the data: 
 
+![view dataframe](https://raw.githubusercontent.com/Marissa841/phase_4_project/main/img/.head().png)
 
 # Methods:
 
@@ -24,8 +16,20 @@ The methods used for this project were based on the OSEMN method and iterative m
 
 # Conclusion:
 
-From the above-mentioned methods, I was able to obtain an overall f1 score of 0.93 using the RandomForestClassifer. This shows it was able to predict whether a tweet was positive or negative. 
-![most important words for final random forest classifier model]
+From the above-mentioned methods, I was able to obtain an overall f1 score of 0.93 using the RandomForestClassifer. This shows it was able to predict whether a tweet was positive or negative. Additionally, negative tweets had more strongly negative words and positive tweets had less distinctive words that indicated positivity.
+
+
+Below is a bar graph illustrating which words were most important and whether the word appeared more in positive or negative tweets:
+
+![most important words for final random forest classifier model](https://raw.githubusercontent.com/Marissa841/phase_4_project/main/img/most_important_words.PNG) 
+
+The words that appeared in negative tweets were more typically negative while the positive tweets were more neutral. 
+
+Below is a confusion matrix that shows the performance of the model: 
+
+![confusion matrix of final random forest classifier model](https://raw.githubusercontent.com/Marissa841/phase_4_project/main/img/confusion_matrix_phase_4.png)
+
+There were 589 true positives, 2 false negatives, 35 true positives, and 84 false positives.
 
 
 # Future Work:

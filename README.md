@@ -8,9 +8,9 @@ Apple is hosting a tech conference and they have asked for a  machine learning m
 
 | Models                   | Bag-of-words | TF-IDF |
 |--------------------------|--------------|--------|
-| Logistic Regression      | 0.924        | 0.914  |
-| Decision Tree Classifier | 0.921        | 0.901  |
-| Random Forest Classifier | 0.931        | 0.923  |
+| Logistic Regression      | 0.931        | 0.926  |
+| Decision Tree Classifier | 0.919        | 0.899  |
+| Random Forest Classifier | 0.932        | 0.929  |
 
 The data used in this project is from CrowdFlower and data.world. The dataset contains 3 columns with 9,093 rows. The dataset can be found [here](https://data.world/crowdflower/brands-and-product-emotions). Below is a snippet of the data: 
 
